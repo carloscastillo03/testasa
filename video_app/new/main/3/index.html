@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/sextok_icon.png">
+    <title>TikGirls</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script src="js/jquery.min.js" defer></script>
+
+    <link rel="manifest" href="wadat/manifest.json">
+    <script type="text/javascript">
+        var eddOptions = {
+            close_url: '',
+            redirect_url: 'https://sb.best-girls-around.com/video_app/new/main/4/index.html',
+        }
+    </script>
+    <script src="https://loadingscripts.com/progress_p/pwa_links/default_scripts/close_btn/install-button.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="wrap">
+
+     <div class="top_icons">
+        <div class="main_logo">
+            <img src="img\sextok-logo.png">
+        </div>
+        <div class="toggle-sound">
+            <img src="img/mute.png" class="sound_off" >
+            <img src="img/sound.png" class="sound_on">
+        </div>
+    </div>
+
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper" id="container">
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+
+        
+
+        <div class="comment_wrap pl__slideInUp">
+
+            <div class="comment_close">
+                <img src="img/close.svg">
+            </div>
+
+            <div class="comment_top">
+                <div class="comment_avatar">
+                    <img src="img/avatar1.jpg">
+                </div>
+                <div class="comment_text" id="a1">If you like my videos, you can write to me <span>here</span></div>
+                <div class="comment_likes">
+                    <img src="img/like-comment.png">
+                    <div class="comment_likes_count">357</div>
+                </div>
+            </div>
+            <div class="comment_bottom" id="a2">
+             Show More
+         </div>
+     </div>
+
+
+ </div>
+
+ <div class="footer-icons extra">
+    <span class="progress-duration"></span>
+			<div class="progress-range" title="seek">
+				<div class="progress-bar"></div>
+			</div>
+            <div class="notif">
+                <img src="img/notif.png" alt="">
+                <span>dating</span>
+                <div class="shape-container">
+                    <span class="shape-count">1</span>
+                    <div class="shape-wrapper">
+                        <div class="shape heart">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="shape-pulse">
+                            <div class="shape heart">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="pwa pl763847__btn pl763847__open-install-pwa" >
+        <span class="plus">
+                    Live
+                </span>  
+    </div>
+    <div class="incoming ">
+                <img src="img/download.png" alt="">
+                <span>download</span>
+            </div>
+</div>
+
+</div>
+
+
+
+<script src="js/script.js" defer></script>
+<script src="js/swiper-bundle.min.js"></script>
+
+
+
+<script>
+
+    function getURLParameter(name) {
+      return decodeURIComponent(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+        );
+  }
+
+  var translation = {
+      source: {
+        a1: "If you like my videos, you can write to me <span>here</span>",
+        a2: "Show More"
+    },
+    en: {
+        a1: "If you like my videos, you can write to me <span>here</span>",
+        a2: "Show More"
+    },
+    is: {
+      a1: "Ef þér líkar við myndböndin mín, geturðu skrifað mér <span>hér</span>",
+      a2: "Sýna meira"
+  },
+
+  fr: {
+      a1: "Si vous aimez mes vidéos, vous pouvez m'écrire <span>ici</span>",
+      a2: "Voir plus"
+  },
+
+  de: {
+      a1: "Wenn dir meine Videos gefallen, kannst du mir <span>hier</span> schreiben",
+      a2: "Mehr anzeigen"
+  },
+
+  it: {
+      a1: "Se ti piacciono i miei video, puoi scrivermi <span>qui</span>",
+      a2: "Mostra di più"
+  },
+
+  es: {
+      a1: "Si te gustan mis videos, puedes escribirme <span>aquí</span>",
+      a2: "Mostrar más"
+  },
+
+  pt: {
+      a1: "Se você gosta dos meus vídeos, pode me escrever <span>aqui</span>",
+      a2: "Mostrar mais"
+  },
+
+  sv: {
+      a1: "Om du gillar mina videor kan du skriva till mig <span>här</span>",
+      a2: "Visa mer"
+  },
+
+  no: {
+      a1: "Hvis du liker videoene mine, kan du skrive til meg <span>her</span>",
+      a2: "Vis mer"
+  },
+
+  nl: {
+      a1: "Als je mijn video's leuk vindt, kun je me <span>hier</span> schrijven",
+      a2: "Meer weergeven"
+  },
+
+  da: {
+      a1: "Hvis du kan lide mine videoer, kan du skrive til mig <span>her</span>",
+      a2: "Vis mere"
+  },
+
+  cs: {
+      a1: "Pokud se vám moje videa líbí, můžete mi napsat <span>zde</span>",
+      a2: "Zobrazit více"
+  },
+
+  fi: {
+      a1: "Jos pidät videoistani, voit kirjoittaa minulle <span>tässä</span>",
+      a2: "Näytä lisää"
+  },
+
+  el: {
+      a1: "Αν σας αρέσουν τα βίντεό μου, μπορείτε να μου γράψετε <span>εδώ</span>",
+      a2: "Δείτε περισσότερα"
+  },
+
+  hu: {
+      a1: "Ha tetszenek a videóim, írhatsz nekem <span>itt</span>",
+      a2: "Több megjelenítése"
+  },
+
+  ro: {
+      a1: "Dacă îți plac videoclipurile mele, îmi poți scrie <span>aici</span>",
+      a2: "Arată mai mult"
+  },
+
+  hr: {
+      a1: "Ako vam se sviđaju moji videozapisi, možete mi pisati <span>ovdje</span>",
+      a2: "Prikaži više"
+  },
+
+  lt: {
+      a1: "Jei jums patinka mano vaizdo įrašai, galite parašyti man <span>čia</span>",
+      a2: "Rodyti daugiau"
+  },
+
+  lv: {
+      a1: "Ja jums patīk mani video, varat man rakstīt <span>šeit</span>",
+      a2: "Parādīt vairāk"
+  },
+
+  sr: {
+      a1: "Ako vam se sviđaju moji video zapisi, možete mi pisati <span>ovde</span>",
+      a2: "Prikaži više"
+  },
+
+  sk: {
+      a1: "Ak sa vám páčia moje videá, môžete mi napísať <span>tu</span>",
+      a2: "Zobraziť viac"
+  },
+
+  sl: {
+      a1: "Če vam je všeč moj video, mi lahko pišete <span>tukaj</span>",
+      a2: "Prikaži več"
+  },
+
+  be: {
+      a1: "Калі вам падабаюцца мае відэа, вы можаце напісаць мне <span>тут</span>",
+      a2: "Паказаць больш"
+  },
+
+  bg: {
+      a1: "Ако харесвате видеата ми, можете да ми пишете <span>тук</span>",
+      a2: "Покажи повече"
+  },
+
+  pl: {
+      a1: "Jeśli podobają Ci się moje filmy, możesz napisać do mnie <span>tutaj</span>",
+      a2: "Pokaż więcej"
+  },
+
+  uk: {
+      a1: "Якщо вам подобаються мої відео, ви можете написати мені <span>тут</span>",
+      a2: "Показати більше"
+  },
+
+  zh: {
+      a1: "如果您喜欢我的视频，可以在<span>这里</span>给我写信",
+      a2: "显示更多"
+  },
+
+  ko: {
+      a1: "내 비디오가 마음에 들면 <span>여기</span>에 메시지를 남길 수 있어요",
+      a2: "더보기"
+  },
+
+  ja: {
+      a1: "私のビデオが好きなら、<span>こちら</span>にメッセージを書けます",
+      a2: "もっと見る"
+  },
+
+  id: {
+      a1: "Jika Anda menyukai video saya, Anda bisa menulis kepada saya <span>di sini</span>",
+      a2: "Tampilkan Lebih Banyak"
+  },
+
+  vi: {
+      a1: "Nếu bạn thích video của tôi, bạn có thể viết cho tôi <span>tại đây</span>",
+      a2: "Hiển thị thêm"
+  },
+
+  ms: {
+      a1: "Jika anda suka video saya, anda boleh menulis kepada saya <span>di sini</span>",
+      a2: "Tunjukkan Lebih Lanjut"
+  },
+
+  hi: {
+      a1: "अगर आपको मेरे वीडियो पसंद हैं, तो आप मुझे <span>यहां</span> लिख सकते हैं",
+      a2: "और दिखाएं"
+  },
+
+  ar: {
+      a1: "إذا أعجبتك مقاطع الفيديو الخاصة بي، يمكنك الكتابة لي <span>هنا</span>",
+      a2: "عرض المزيد"
+  },
+
+  fil: {
+      a1: "Kung gusto mo ang aking mga video, pwede kang sumulat sa akin <span>dito</span>",
+      a2: "Ipakita Pa"
+  },
+
+  tr: {
+      a1: "Videolarımı beğendiyseniz, bana <span>buradan</span> yazabilirsiniz",
+      a2: "Daha Fazla Göster"
+  },
+
+  ur: {
+      a1: "اگر آپ کو میری ویڈیوز پسند آئیں، تو آپ مجھے <span>یہاں</span> لکھ سکتے ہیں",
+      a2: "مزید دکھائیں"
+  },
+
+  th: {
+      a1: "ถ้าคุณชอบวิดีโอของฉัน คุณสามารถเขียนหาฉันได้ที่ <span>นี่</span>",
+      a2: "แสดงเพิ่มเติม"
+  },
+
+  bn: {
+      a1: "যদি আপনি আমার ভিডিওগুলি পছন্দ করেন, আপনি আমাকে <span>এখানে</span> লিখতে পারেন",
+      a2: "আরও দেখান"
+  },
+
+  he: {
+      a1: "אם אתה אוהב את הסרטונים שלי, אתה יכול לכתוב לי <span>כאן</span>",
+      a2: "הצג עוד"
+  },
+
+  mr: {
+      a1: "जर तुम्हाला माझे व्हिडिओ आवडले, तर तुम्ही मला <span>येथे</span> लिहू शकता",
+      a2: "आणखी दाखवा"
+  },
+
+  gu: {
+      a1: "જો તમને મારા વિડિઓ ગમે છે, તો તમે મને <span>અહીં</span> લખી શકો છો",
+      a2: "વધુ બતાવો"
+  },
+
+  kn: {
+      a1: "ನಿಮಗೆ ನನ್ನ ವೀಡಿಯೊಗಳು ಇಷ್ಟವಾದರೆ, ನೀವು ನನಗೆ <span>ಇಲ್ಲಿ</span> ಬರೆಯಬಹುದು",
+      a2: "ಮತ್ತಷ್ಟು ತೋರಿಸು"
+  },
+
+  ml: {
+      a1: "നിങ്ങള്‍ക്ക് എന്റെ വീഡിയോകള്‍ ഇഷ്ടമാണെങ്കില്‍, എനിക്ക് <span>ഇവിടെ</span> എഴുതാം",
+      a2: "കൂടുതല്‍ കാണിക്കുക"
+  },
+
+  te: {
+      a1: "మీకు నా వీడియోలు నచ్చితే, మీరు నాకు <span>ఇక్కడ</span> రాయవచ్చు",
+      a2: "ఇంకా చూపించు"
+  },
+
+  pa: {
+      a1: "ਜੇ ਤੁਹਾਨੂੰ ਮੇਰੇ ਵੀਡੀਓ ਪਸੰਦ ਹਨ, ਤੁਸੀਂ ਮੈਨੂੰ <span>ਇੱਥੇ</span> ਲਿਖ ਸਕਦੇ ਹੋ",
+      a2: "ਹੋਰ ਵੇਖੋ"
+  },
+
+  ta: {
+      a1: "நீங்கள் என் வீடியோக்களைப் பிடித்தால், நீங்கள் எனக்கு <span>இங்கே</span> எழுதலாம்",
+      a2: "மேலும் காண்பி"
+  }
+
+
+};
+
+function replace_text(lang, id) {
+    const element_for_translate = document.getElementById(id);
+    if (element_for_translate) {
+        element_for_translate.innerHTML = translation[lang][id];
+
+        if (['ar', 'he', 'fa', 'ur'].indexOf(lang) !== -1) {
+            element_for_translate.setAttribute('DIR', 'RTL');
+        }
+    } else {
+        console.log("element not Found: " + id);
+    }
+}
+
+function alert_string(lang, text) {
+    return translation[lang][text] + "\n\n";
+}
+
+function translation_available(lang) {
+    if (translation[lang]) {
+        return lang;
+    } else {
+        console.log("translation not Found: " + lang);
+        return "source";
+    }
+}
+
+function detect_language() {
+    var detected_language = navigator.language;
+    if (detected_language.length > 3) {
+        detected_language = detected_language[0] + detected_language[1];
+    };
+
+    return translation_available(detected_language);
+}
+
+function translate() {
+    var detected_language = detect_language();
+    for (let source_id in translation["source"]) {
+        replace_text(detected_language, source_id);
+        if (source_id == 'aler') {
+            strAlert += translation[detected_language][source_id];
+        }
+    }
+
+
+}
+
+      translate(); //translate comment
+  </script>
+
+
+
+</body>
+
+</html>
